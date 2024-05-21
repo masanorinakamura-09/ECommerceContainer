@@ -34,7 +34,7 @@ Dockerコンテナを作成して起動してください。
 # Usage
 
 以下のURLにアクセスし、ホーム画面が表示されます。<br>
-http://localhost:/sampleEC/home<br>
+http://localhost/sampleEC/home<br>
 ログインID、パスワードを入力し、ログインします。<br>
 <br>
 ログインID:[USERA]、パスワード:[PASSA]<br>
