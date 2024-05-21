@@ -2,27 +2,27 @@ version: "3.9"
 
 services:
     
-    web:
+    ecommerceweb:
         build: ./web
-        image: "myimage:web"
+        image: "myimage:ecommerceweb"
         ports:
             - 80:80
             - 443:443
         links:
-            - "db:ecommercedb_container"
+            - "ecommercedb:ecommercedb_container"
         container_name: "ecommerceweb_container"
         
-    db:
+    ecommercedb:
         build: ./db
-        image: "myimage:db"
+        image: "myimage:ecommercedb"
         ports:
             - 4306:3306
         expose:
             - 3306
         container_name: "ecommercedb_container"
         volumes:
-            - db_data:/var/lib/mysql
+            - ecomercedb_data:/var/lib/mysql
             
 volumes:
-    db_data:
+    ecomercedb_data:
             
